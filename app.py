@@ -9,12 +9,12 @@ bot = telebot.TeleBot(TOKEN)
 def beginning(message: telebot.types.Message):
     text = "Что бы начать работу введите команду боту в следующем формате:\n<имя валюты>\
 <В какую валюту перевести>\
-<Количество переводимой валюты>\n Список доступных валют: /money"
+<Количество переводимой валюты>\n Список доступных валют: /values"
 
     bot.reply_to(message, text)
 
 
-@bot.message_handler(commands=['money'])
+@bot.message_handler(commands=['values'])
 def date(message: telebot.types.Message):
     text = 'Доступные валюты:'
     for key in keys.keys():
