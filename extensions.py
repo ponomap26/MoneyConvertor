@@ -9,7 +9,7 @@ class APIException(Exception):
 
 class MoneyConvertor:
     @staticmethod
-    def convert(quote, base, amount):
+    def comint(quote, base, amount):
         keys[quote], keys[base] = keys[quote], keys[base]
         quote_ticker, base_ticker = keys[quote], keys[base]
         if quote == base:
