@@ -5,7 +5,6 @@ from config import keys
 from extensions import APIException, MoneyConvertor
 
 
-
 load_dotenv(find_dotenv())
 bot = telebot.TeleBot(os.getenv('TOKEN'))
 
